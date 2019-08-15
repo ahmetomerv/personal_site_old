@@ -6,8 +6,18 @@
 @import "styles/variables.scss";
 
 body {
-  font-family: 'SourceSansPro', sans-serif, Arial;
-  color: $primary-text;
-  margin: 0;
-  padding: 0;
+	font-family: 'SourceSansPro', sans-serif, Arial;
+	color: $primary-text;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.secondary-container {
+	margin: 0 auto;
+	width: 70%;
 }

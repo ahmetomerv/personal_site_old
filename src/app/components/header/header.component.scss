@@ -1,0 +1,29 @@
+@import "~src/styles/variables.scss";
+
+header * {
+	font-family: 'Roboto Slab', sans-serif, Arial;
+	color: $primary-text;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid dimgrey;
+	align-items: center;
+	.header-nav a {
+		text-decoration: none;
+		display: inline-block;
+		padding: .8em .4em;
+		margin-left: .4em;
+	}
+	.header-logo a {
+		text-decoration: none;
+		font-weight: 700;
+	}
+	.header-nav {
+		a {
+			&:hover {
+				color: lighten($primary-text, 40%);
+			}
+		}
+	}
+}

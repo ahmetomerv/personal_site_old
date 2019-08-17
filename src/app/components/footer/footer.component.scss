@@ -1,0 +1,15 @@
+@import "~src/styles/variables.scss";
+
+.footer {
+	width: 100%;
+	height: 70px;
+	margin-top: 3em;
+	background: #f4f6f4;
+	.container {
+		display: flex;
+		p {
+			color: $secondary_grey;
+			font-family: 'Roboto Slab', sans-serif, Arial;
+		}
+	}
+}

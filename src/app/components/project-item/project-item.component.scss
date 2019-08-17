@@ -1,0 +1,60 @@
+@import "~src/styles/variables.scss";
+
+.project-item-container {
+	background: #fff;
+	padding: .5em;
+	width: 400px;
+	margin: .5em 0;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 4px 2px rgba(0,0,0,0.03);
+	border: 1px solid rgba(0,0,0,0.03);
+	.project-item-img-container {
+		flex: 1;
+		#project-item-art-canvas {
+			width: 100%;
+			margin: 0;
+		}
+	}
+	.project-item-content-container {
+		flex: 4;
+		padding-left: .4em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.project-item-content-header {
+			flex: 1;
+			p {
+				margin: 0;
+				font-family: 'Roboto Slab', sans-serif, Arial;
+				font-weight: bold;
+				font-size: 1.4em;
+			}
+		}
+		.project-item-description {
+			flex: 2;
+			color: $secondary_grey;
+		}
+		.project-item-content-info {
+			font-family: 'Source Sans Pro', sans-serif, Arial;
+			flex: 1;
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			.project-item-content-info-languages {
+				display: flex;
+				align-items: flex-end;
+				color: $secondary_grey;
+				p {
+					margin: 0 .4em 0 0;
+				}
+			}
+			.project-item-content-info-links {
+				margin-top: .5em;
+				a {
+					margin-left: .85em;
+				}
+			}
+		}
+	}
+}

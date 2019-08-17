@@ -1,2 +1,18 @@
 <app-header></app-header>
+<div class="container">
+	<app-about></app-about>
+   <!--<button class="button primary-button">Button</button>
+	<button class="button secondary-button">Button</button>-->
+
+	<app-internet-addresses></app-internet-addresses>
+
+	<h2 class="main-header">Works</h2>
+	<p>List to some of my personal projects. </p>
+	<div class="projects-container">
+		<div *ngFor="let project of projects">
+			<app-project-item [project]="project"></app-project-item>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>
 <router-outlet></router-outlet>

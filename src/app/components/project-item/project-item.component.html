@@ -1,0 +1,24 @@
+<a [href]="project.repoUrl" style="text-decoration: none; color: inherit;">
+	<div class="project-item-container">
+		<div class="project-item-img-container">
+			<canvas #projectItemArtCanvas id="project-item-art-canvas"></canvas>
+		</div>
+		<div class="project-item-content-container">
+			<div class="project-item-content-header">
+				<p>{{project.repoName}}</p>
+			</div>
+			<div class="project-item-description">
+				{{project.description}}
+			</div>
+			<div class="project-item-content-info">
+				<div class="project-item-content-info-languages">
+
+				</div>
+				<div class="project-item-content-info-links">
+					<a class="main-link" [href]="project.repoHostedUrl">Live Version</a>
+					<a class="main-link" [href]="project.repoUrl">Source Code</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</a>

@@ -2,6 +2,7 @@ import { IProject } from '../interfaces/project.interface';
 
 const reposToList: string[] = [
 	'tassel_notes',
+	'youtube_clone_client',
 	'text_to_speech',
 	'git_finder',
 	'compleet_labs_client',

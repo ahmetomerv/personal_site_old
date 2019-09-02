@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy:github": "ng build --prod --base-href https://ahmetomerv.github.io/ahmetomer_web/ && ngh",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

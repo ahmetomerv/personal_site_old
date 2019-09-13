@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, Input, ViewChild } from '@angular/core';
+import { animate, style, transition, trigger } from '@angular/animations';
 import { IProject } from '../../interfaces/project.interface';
 
 // const CSS_COLOR_NAMES = ['white', '#E1E5EE', '#031927', 'black', 'grey'];
@@ -7,7 +8,25 @@ const CSS_COLOR_NAMES = ['AliceBlue', 'AntiqueWhite', 'Aqua', 'Aquamarine', 'Azu
 @Component({
 	selector: 'app-project-item',
 	templateUrl: './project-item.component.html',
-	styleUrls: ['./project-item.component.scss']
+	styleUrls: ['./project-item.component.scss'],
+	animations: [
+		trigger(
+		  'fadeIn', [
+			 	transition(
+					':enter', [
+				  		style({ opacity: '0' }),
+						animate('250ms', style({ opacity: '1' }))
+					]
+			 	),
+			 	transition(
+					':leave', [
+						style({ 'opacity': '1' }),
+						animate('250ms', style({ opacity: '0' }))
+					]
+			   )
+		   ]
+		)
+	]
 })
 export class ProjectItemComponent implements AfterViewInit {
 	@Input()

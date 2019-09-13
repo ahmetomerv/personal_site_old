@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,12 +21,13 @@ import { GithubService } from './services/github.service';
 		ProjectItemComponent,
 		InternetAddressesComponent,
 		AboutComponent,
-		FooterComponent
+		FooterComponent,
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
-		HttpClientModule
+		HttpClientModule,
+		BrowserAnimationsModule,
 	],
 	providers: [GithubService],
 	bootstrap: [AppComponent]

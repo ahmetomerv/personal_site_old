@@ -9,7 +9,7 @@ const reposToList: string[] = [
 	'video_snapper',
 	'image_filterer',
 	'imdb_scrapper_client',
-	'spacex_launch_status',
+	'spacex_launch_stats',
 ];
 
 export const githubRepoMapper = (response: any[]): IProject[] => response.map(repo => {

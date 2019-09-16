@@ -8,7 +8,8 @@ const reposToList: string[] = [
 	'compleet_labs_client',
 	'video_snapper',
 	'image_filterer',
-	'imdb_scrapper_client'
+	'imdb_scrapper_client',
+	'spacex_launch_status',
 ];
 
 export const githubRepoMapper = (response: any[]): IProject[] => response.map(repo => {

@@ -4,16 +4,6 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { githubRepoMapper } from '../mappers/github-repo.mapper';
 
-const reposToList: any[] = [
-	'tassel_notes',
-	'text_to_speech',
-	'git_finder',
-	'compleet_labs_client',
-	'video_snapper',
-	'image_filterer',
-	'imdb_scrapper_client'
-];
-
 @Injectable()
 export class GithubService {
 	clientId = 'e396a7ee2bb34bff9db1';

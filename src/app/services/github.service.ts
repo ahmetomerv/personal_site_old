@@ -3,11 +3,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { githubRepoMapper } from '../mappers/github-repo.mapper';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class GithubService {
-	clientId = 'e396a7ee2bb34bff9db1';
-	clientSecret = '8a5708afd3ed1f3eb85f9c8e01effc948d3a64dd';
+	clientId = environment.githubAPI.clientId;
+	clientSecret = environment.githubAPI.clientSecret;
 	reposCount = 100;
 
 	constructor(private httpClient: HttpClient) {}

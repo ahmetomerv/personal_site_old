@@ -1,6 +1,7 @@
 export interface IProject {
-	repoName: string;
-	repoUrl: string;
-	repoHostedUrl: string;
+	name: string;
 	description: string;
+	repoUrl?: string;
+	repoHostedUrl?: string;
+	path?: string;
 }

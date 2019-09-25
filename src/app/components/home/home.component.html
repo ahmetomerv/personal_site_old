@@ -1,0 +1,19 @@
+<div class="container">
+	<app-about></app-about>
+	<app-internet-addresses></app-internet-addresses>
+
+	<h2 class="main-header">Works</h2>
+	<p>Some of my work projects. </p>
+	<div class="projects-container">
+		<div *ngFor="let project of workProjects">
+			<app-project-item [project]="project"></app-project-item>
+		</div>
+	</div>
+	<hr>
+	<p>List to some of my personal projects. </p>
+	<div class="projects-container">
+		<div *ngFor="let project of personalProjects">
+			<app-project-item [project]="project"></app-project-item>
+		</div>
+	</div>
+</div>

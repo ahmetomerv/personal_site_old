@@ -14,9 +14,9 @@ const reposToList: string[] = [
 
 export const githubRepoMapper = (response: any[]): IProject[] => response.map(repo => {
 	return {
-		repoName: repo.name,
+		name: repo.name,
 		repoUrl: repo.html_url,
 		repoHostedUrl: repo.homepage,
 		description: repo.description
 	};
-}).filter(item => reposToList.includes(item.repoName));
+}).filter(item => reposToList.includes(item.name));

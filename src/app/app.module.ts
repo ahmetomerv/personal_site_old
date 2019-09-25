@@ -13,6 +13,10 @@ import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { GithubService } from './services/github.service';
+import { ProjectIndeksComponent } from './components/project-detail/project-indeks/project-indeks.component';
+import { ProjectSatComponent } from './components/project-detail/project-sat/project-sat.component';
+import { ProjectDijitaldepoComponent } from './components/project-detail/project-dijitaldepo/project-dijitaldepo.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
 	declarations: [
@@ -22,6 +26,10 @@ import { GithubService } from './services/github.service';
 		InternetAddressesComponent,
 		AboutComponent,
 		FooterComponent,
+		ProjectIndeksComponent,
+		ProjectSatComponent,
+		ProjectDijitaldepoComponent,
+		HomeComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -31,5 +39,5 @@ import { GithubService } from './services/github.service';
 	],
 	providers: [GithubService],
 	bootstrap: [AppComponent]
-	})
+})
 export class AppModule { }

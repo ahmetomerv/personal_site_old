@@ -25,6 +25,11 @@ export class HomeComponent implements OnInit {
 			name: "Dijital Depo - Türk Telekom",
 			description: "Online file storage service",
 			path: '/project/dijitaldepo'
+		},
+		{
+			name: "Marketplace - Türk Telekom",
+			description: "Software & services market",
+			path: '/project/marketplace'
 		}
 	]
 
